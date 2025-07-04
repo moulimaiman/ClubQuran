@@ -1,0 +1,48 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "clubquranproject",
+          "appId": "1:217528395311:android:2b887dc2c7253b692948da",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "clubquranproject",
+          "configurations": {
+            "android": "1:217528395311:android:2b887dc2c7253b692948da",
+            "ios": "1:217528395311:ios:4b3eb084091761472948da",
+            "macos": "1:217528395311:ios:4b3eb084091761472948da",
+            "web": "1:217528395311:web:393679835e0c20e72948da",
+            "windows": "1:217528395311:web:8532fd735f1e37972948da"
+          }
+        }
+      }
+    }
+  },
+  "hosting": {
+    "source": ".",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "frameworksBackend": {
+      "region": "us-central1"
+    },
+    "public": "build/web",
+    "headers": [
+      {
+        "source": "**/*.@(jpg|jpeg|gif|png|svg|webp|ico)",
+        "headers": [
+          {
+            "key": "Access-Control-Allow-Origin",
+            "value": "*"
+          }
+        ]
+      }
+    ]
+  }
+}
